@@ -7,7 +7,7 @@ Slamp
 </a>
 </div>
 <br>
-Author: Orlando Cosimo.<br>
+Author: Cosimo Orlando.<br>
 Blog: http://creativityslashdesign.tk/
 <br>
 <br>
