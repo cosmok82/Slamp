@@ -10,11 +10,15 @@ Slamp
 Author: Orlando Cosimo.<br>
 Blog: http://creativityslashdesign.tk/
 <br>
+<br>
 Step One: The Theory  http://goo.gl/4UFlwn
 <br>
 <img src="https://raw.githubusercontent.com/cosmok82/Slamp/master/link1.jpg" alt="link1.jpg">
 <br>
-Step Two: The Circuit http://goo.gl/O1Z8KO <img src="https://raw.githubusercontent.com/cosmok82/Slamp/master/link2.jpg" alt="link2.jpg">
+Step Two: The Circuit http://goo.gl/O1Z8KO
+<br>
+<img src="https://raw.githubusercontent.com/cosmok82/Slamp/master/link2.jpg" alt="link2.jpg">
+<br>
 <br>
 Slamp: "S" for smart.
 <br>
