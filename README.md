@@ -19,8 +19,13 @@ Step Two: The Circuit http://goo.gl/O1Z8KO
 <br>
 <img src="https://raw.githubusercontent.com/cosmok82/Slamp/master/link2.jpg" alt="link2.jpg">
 <br>
+Step Three: The End of Project http://goo.gl/0ydnlN
+<br>
+<img src="https://raw.githubusercontent.com/cosmok82/Slamp/master/link3.png" alt="link3.png">
+<br>
 <br>
 Slamp: "S" for smart, a Programmable Power Lamp shield based on Slenduino.
+<br>
 <br>
 <br>
 All info on my blog.
