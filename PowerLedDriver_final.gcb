@@ -1,0 +1,267 @@
+;Chip Settings
+#chip 12F683,8
+#config MCLRE=OFF, OSC=INTOSCIO
+
+;Defines (Constants)
+#define PWMpin GPIO.2
+#define Button1 GPIO.1
+#define Button2 GPIO.3
+#define VRef GPIO.0
+#define Sensor AN3
+
+;Variables
+Dim i As integer
+Dim time As integer
+
+init
+start:
+Set PWMpin On
+If Button1 Then
+
+	'Increase Power of Slamp
+	'840 = 82% of 1024
+	If ReadAD10(Sensor) >= 840 Then
+		time = 6000
+		For i = 0 To time
+
+			'2/3 of second Flash
+			_052_56
+		Next
+	End If
+Else
+
+	'Switch On
+	For i = 0 To 9000
+		_090_18
+	Next
+End If
+Goto start
+
+Sub init
+	Dir PWMpin Out
+	Dir Button1 In
+	Dir Button2 In
+	Dir VRef In
+
+	'Sensor in
+	Dir GPIO.4 In
+	i = 0
+	time = 0
+End Sub
+
+Sub _052_56
+	'24,2V output
+	Set PWMpin On
+	Wait 52 us
+	Set PWMpin Off
+	Wait 56 us
+End Sub
+
+Sub _054_54
+	'23,8V output
+	Set PWMpin On
+	Wait 54 us
+	Set PWMpin Off
+	Wait 54 us
+End Sub
+
+Sub _056_52
+	'23,4V output
+	Set PWMpin On
+	Wait 56 us
+	Set PWMpin Off
+	Wait 52 us
+End Sub
+
+Sub _058_50
+	'23,4V output
+	Set PWMpin On
+	Wait 58 us
+	Set PWMpin Off
+	Wait 50 us
+End Sub
+
+Sub _060_48
+	'23.2V output
+	Set PWMpin On
+	Wait 60 us
+	Set PWMpin Off
+	Wait 48 us
+End Sub
+
+Sub _062_46
+	'23V output
+	Set PWMpin On
+	Wait 62 us
+	Set PWMpin Off
+	Wait 46 us
+End Sub
+
+Sub _064_44
+	'23V output
+	Set PWMpin On
+	Wait 64 us
+	Set PWMpin Off
+	Wait 44 us
+End Sub
+
+Sub _066_42
+	'22,6V output
+	Set PWMpin On
+	Wait 66 us
+	Set PWMpin Off
+	Wait 42 us
+End Sub
+
+Sub _068_40
+	'22,4V output
+	Set PWMpin On
+	Wait 68 us
+	Set PWMpin Off
+	Wait 40 us
+End Sub
+
+Sub _070_38
+	'22,2V output
+	Set PWMpin On
+	Wait 70 us
+	Set PWMpin Off
+	Wait 38 us
+End Sub
+
+Sub _072_36
+	'22,2V output
+	Set PWMpin On
+	Wait 72 us
+	Set PWMpin Off
+	Wait 36 us
+End Sub
+
+Sub _074_34
+	'22V output
+	Set PWMpin On
+	Wait 74 us
+	Set PWMpin Off
+	Wait 34 us
+End Sub
+
+Sub _076_32
+	'21,8V output
+	Set PWMpin On
+	Wait 76 us
+	Set PWMpin Off
+	Wait 32 us
+End Sub
+
+Sub _078_30
+	'21,4V output
+	Set PWMpin On
+	Wait 78 us
+	Set PWMpin Off
+	Wait 30 us
+End Sub
+
+Sub _080_28
+	'21,3V output
+	Set PWMpin On
+	Wait 80 us
+	Set PWMpin Off
+	Wait 28 us
+End Sub
+
+Sub _082_26
+	'21.2V output
+	Set PWMpin On
+	Wait 82 us
+	Set PWMpin Off
+	Wait 26 us
+End Sub
+
+Sub _084_24
+	'21V output
+	Set PWMpin On
+	Wait 84 us
+	Set PWMpin Off
+	Wait 24 us
+End Sub
+
+Sub _086_22
+	'20.8V output
+	Set PWMpin On
+	Wait 86 us
+	Set PWMpin Off
+	Wait 22 us
+End Sub
+
+Sub _088_20
+	'20.4V output
+	Set PWMpin On
+	Wait 88 us
+	Set PWMpin Off
+	Wait 20 us
+End Sub
+
+Sub _090_18
+	'20V output
+	Set PWMpin On
+	Wait 90 us
+	Set PWMpin Off
+	Wait 18 us
+End Sub
+
+Sub _092_16
+	'19.8V output
+	Set PWMpin On
+	Wait 92 us
+	Set PWMpin Off
+	Wait 16 us
+End Sub
+
+Sub _094_14
+	'19.4V output
+	Set PWMpin On
+	Wait 94 us
+	Set PWMpin Off
+	Wait 14 us
+End Sub
+
+Sub _096_12
+	'19.2V output
+	Set PWMpin On
+	Wait 96 us
+	Set PWMpin Off
+	Wait 12 us
+End Sub
+
+Sub _098_10
+	'19V output
+	Set PWMpin On
+	Wait 98 us
+	Set PWMpin Off
+	Wait 10 us
+End Sub
+
+Sub _100_8
+	'18.8V output
+	Set PWMpin On
+	Wait 100 us
+	Set PWMpin Off
+	Wait 8 us
+End Sub
+
+Sub _102_6
+	'18.4V output
+	Set PWMpin On
+	Wait 102 us
+	Set PWMpin Off
+	Wait 6 us
+End Sub
+
+Sub _104_4
+	'18.2V output
+	Set PWMpin On
+	Wait 104 us
+	Set PWMpin Off
+	Wait 4 us
+End Sub
+
