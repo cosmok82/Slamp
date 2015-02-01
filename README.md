@@ -13,11 +13,11 @@ Blog: http://creativityslashdesign.tk/
 <br>
 Step One: The Theory  http://goo.gl/4UFlwn
 <br>
-<img src="https://raw.githubusercontent.com/cosmok82/Slamp/master/link1.jpg" alt="link1.jpg">
+<img src="https://raw.githubusercontent.com/cosmok82/Slamp/master/link1.png" alt="link1.png">
 <br>
 Step Two: The Circuit http://goo.gl/O1Z8KO
 <br>
-<img src="https://raw.githubusercontent.com/cosmok82/Slamp/master/link2.jpg" alt="link2.jpg">
+<img src="https://raw.githubusercontent.com/cosmok82/Slamp/master/link2.png" alt="link2.png">
 <br>
 Step Three: The End of Project http://goo.gl/0ydnlN
 <br>
